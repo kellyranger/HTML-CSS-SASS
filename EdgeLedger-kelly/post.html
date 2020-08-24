@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/2aa724fd9b.js" crossorigin="anonymous"></script>
+  <title>Post One</title>
+</head>
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <h1>Blog</h1>
+      
+    </div>
+  </header>
+  <main>
+
+    <section class="post">
+      <h2>Blog Post One</h2>
+        <p class="meta">
+        <i class="fa fas-user"></i>
+        <strong>Posted by John Doe</strong> | August 21, 2020
+        </p>
+        <img src="images/blog/blog1.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempore nemo, facilis at aliquid sed inventore fugiat reprehenderit, maxime fuga quod magni veniam vero minus, quis deleniti. Laudantium, veniam distinctio.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ipsa delectus ipsum vitae? Qui, impedit! Fugiat, reiciendis consectetur delectus, eos quibusdam autem qui ab corrupti doloremque eaque magni? Quo quaerat quis voluptatum debitis sequi! Culpa, vero distinctio a modi et autem! Eos quis velit blanditiis! Perferendis velit harum accusamus sint.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid deserunt corrupti a voluptatibus quis sunt? Consectetur illum assumenda distinctio placeat saepe cum ipsam ratione nam ullam, rem eligendi omnis in quis sunt odit maiores mollitia harum consequatur laborum, earum optio consequuntur. Amet dolore enim illo iusto atque impedit, necessitatibus inventore debitis odit eveniet ut animi? Ex harum temporibus repellat libero?</p>
+
+    </section>
+
+  </main>
+ 
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy 2020 EdgeLedger</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+
+      let scrolled = false;
+
+      window.onscroll = function(){
+        if(window.pageYOffset > 100){
+          navbar.classList.remove('top');
+          if(!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(() => {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        }else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      }
+  </script>
+</body>
+</html>
